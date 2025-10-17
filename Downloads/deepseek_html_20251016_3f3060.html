@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Eva Gabriela Gómez Navarro</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            color: #333;
+            max-width: 210mm;
+            margin: 0 auto;
+            background-color: #f5f5f5;
+            font-size: 11pt;
+        }
+        
+        .cv-container {
+            display: flex;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        /* Columna izquierda - Información personal */
+        .sidebar {
+            width: 30%;
+            background: linear-gradient(135deg, #1a3a5f 0%, #2c5282 100%);
+            color: white;
+            padding: 25px 20px;
+        }
+        
+        .photo-container {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        
+        .photo-placeholder {
+            width: 150px;
+            height: 180px;
+            margin: 0 auto;
+            background: #2c5282;
+            border: 3px solid white;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 10pt;
+            overflow: hidden;
+        }
+        
+        .section-title-sidebar {
+            font-size: 14pt;
+            font-weight: bold;
+            margin: 20px 0 10px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #2c9fcc;
+        }
+        
+        .contact-info {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .contact-icon {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+        
+        .skills-list, .certifications-list {
+            padding-left: 5px;
+        }
+        
+        .skills-list li, .certifications-list li {
+            margin-bottom: 8px;
+            list-style-type: none;
+            position: relative;
+            padding-left: 15px;
+        }
+        
+        .skills-list li:before, .certifications-list li:before {
+            content: "•";
+            color: #2c9fcc;
+            position: absolute;
+            left: 0;
+        }
+        
+        /* Columna derecha - Contenido principal */
+        .main-content {
+            width: 70%;
+            padding: 25px 30px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #1a3a5f;
+        }
+        
+        .name {
+            font-size: 22pt;
+            font-weight: bold;
+            color: #1a3a5f;
+            margin-bottom: 8px;
+        }
+        
+        .professional-title {
+            font-size: 14pt;
+            color: #2c5282;
+            font-weight: 600;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+            page-break-inside: avoid;
+        }
+        
+        .section-title {
+            font-size: 14pt;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(to right, #1a3a5f 0%, #2c5282 100%);
+            padding: 8px 15px;
+            margin-bottom: 12px;
+            border-left: 5px solid #2c9fcc;
+        }
+        
+        /* Virtudes profesionales */
+        .virtues-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .virtue-card {
+            background: #f8f9fa;
+            border-left: 4px solid #2c9fcc;
+            padding: 12px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .virtue-title {
+            font-weight: bold;
+            color: #1a3a5f;
+            margin-bottom: 5px;
+            font-size: 12pt;
+        }
+        
+        /* Experiencia profesional */
+        .job {
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px dashed #ddd;
+        }
+        
+        .job:last-child {
+            border-bottom: none;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            color: #1a3a5f;
+            font-size: 12pt;
+        }
+        
+        .company {
+            font-weight: bold;
+            color: #2c5282;
+        }
+        
+        .period {
+            font-style: italic;
+            color: #666;
+        }
+        
+        .job-description {
+            margin-top: 5px;
+            text-align: justify;
+        }
+        
+        /* Educación */
+        .education-item {
+            margin-bottom: 12px;
+        }
+        
+        .education-degree {
+            font-weight: bold;
+            color: #1a3a5f;
+        }
+        
+        .education-institution {
+            color: #2c5282;
+        }
+        
+        /* Para impresión */
+        @media print {
+            body {
+                background: white;
+                max-width: 100%;
+                box-shadow: none;
+                font-size: 10pt;
+            }
+            
+            .cv-container {
+                box-shadow: none;
+            }
+            
+            .page-break {
+                page-break-before: always;
+            }
+            
+            .sidebar {
+                background: #1a3a5f !important;
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+            
+            .section-title {
+                background: #1a3a5f !important;
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+            
+            .virtue-card {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+        }
+        
+        /* Estilos adicionales para mejorar la apariencia */
+        .profile-text {
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+        
+        .two-columns {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .column {
+            width: 48%;
+        }
+        
+        .no-break {
+            page-break-inside: avoid;
+        }
+        
+        .signature-space {
+            margin-top: 30px;
+            text-align: right;
+        }
+        
+        .signature-line {
+            border-top: 1px solid #333;
+            width: 200px;
+            display: inline-block;
+            margin-top: 40px;
+        }
+        
+        .highlight {
+            background-color: #e8f4fc;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+        
+        .job-responsibilities {
+            margin-top: 8px;
+        }
+        
+        .job-responsibilities li {
+            margin-bottom: 5px;
+            list-style-type: none;
+            position: relative;
+            padding-left: 15px;
+        }
+        
+        .job-responsibilities li:before {
+            content: "•";
+            color: #2c9fcc;
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <!-- Columna izquierda con foto e información personal -->
+        <div class="sidebar">
+            <div class="photo-container">
+                <div class="photo-placeholder">
+                   <img src="Fotoa.png" alt="Eva Gabriela Gómez Navarro" style="width:150px; height:180px; object-fit:cover;">
+                </div>
+            </div>
+            
+            <div class="section-title-sidebar">CONTACTO</div>
+            <div class="contact-info">
+                <div class="contact-icon">📍</div>
+                <div>Ignacio Rayón Sur #913, Col. Universidad</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-icon">📞</div>
+                <div>+52 (722) 588 6862<br>+52 (55) 4468 3547</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-icon">✉️</div>
+                <div>actgabby@gmail.com<br>reservamatematica@gmail.com</div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-icon">📄</div>
+                <div>RFC: GONE820227EJ3</div>
+            </div>
+            
+            <div class="section-title-sidebar">HABILIDADES</div>
+            <ul class="skills-list">
+                <li>Análisis de riesgo financiero, de mercado y de crédito</li>
+                <li>Valuación de instrumentos financieros y derivados</li>
+                <li>Modelos econométricos y cálculo actuarial</li>
+                <li>Análisis contable, numérico y financiero</li>
+                <li>Evaluación de viabilidad y rendimientos de inversión</li>
+                <li>Microsoft Office, SPSS, Visual Basic, Access</li>
+                <li>Excel avanzado (macros, tablas dinámicas)</li>
+            </ul>
+            
+            <div class="section-title-sidebar">IDIOMAS</div>
+            <ul class="skills-list">
+                <li>Español (nativo)</li>
+                <li>Inglés (intermedio - 60%)</li>
+            </ul>
+            
+            <div class="section-title-sidebar">CERTIFICACIONES</div>
+            <ul class="certifications-list">
+                <li>Agente de Seguros en Riesgos Personales – CNSF (No. Y366997)</li>
+                <li>Figura I (Fondos de Inversión) – BMV (Matrícula 95215)</li>
+                <li>Asesoría en Materia de Crédito – INFONAVIT / Excela (No. 2676710)</li>
+            </ul>
+        </div>
+        
+        <!-- Columna derecha con contenido principal -->
+        <div class="main-content">
+            <div class="header">
+                <div class="name">EVA GABRIELA GÓMEZ NAVARRO</div>
+                <div class="professional-title">ACTUARIA FINANCIERA CON MAESTRÍA EN FINANZAS</div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">OBJETIVO</div>
+                <p class="profile-text">Lograr una posición a nivel financiero, administrativo y/o contable para analizar y resolver problemas de riesgo financiero, de mercado y de crédito, con base en el análisis contable, numérico y financiero, que permita la óptima toma de decisiones conforme a políticas y procesos establecidos.</p>
+                <p class="profile-text">Brindar consultoría evaluando la viabilidad y los rendimientos de estrategias de inversión financiera, cumpliendo con metas y fomentando las buenas prácticas en la gestión de los recursos financieros de la entidad.</p>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">EDUCACIÓN</div>
+                
+                <div class="education-item">
+                    <div class="education-degree">Maestría en Administración Financiera</div>
+                    <div class="education-institution">Instituto Universitario Latinoamericano, incorporado a la SEP</div>
+                    <div class="period">2015</div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="education-degree">Licenciatura en Actuaría Financiera</div>
+                    <div class="education-institution">Universidad Autónoma del Estado de México</div>
+                    <div class="period">2000 - 2005</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <div class="section-title">EXPERIENCIA PROFESIONAL</div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Consultoría en Administración y Finanzas</div>
+                        <div class="period">2024 - Presente</div>
+                    </div>
+                    <div class="company">Loyd's & Navarro</div>
+                    <div class="job-description">
+                        Fundadora y directora de despacho especializado en asesoría personalizada en protección financiera dentro del ramo de vida. Alianza estratégica con Seguros Monterrey New York Life. Desarrollo de cartera de clientes bajo un enfoque integral en gestión de riesgos. Conformación y capacitación de equipo de trabajo para ofrecer soluciones de valor, consolidando una operación rentable y en constante crecimiento.
+                    </div>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Gerente de Análisis</div>
+                        <div class="period">2023 - 2024</div>
+                    </div>
+                    <div class="company">Multiservicios ADFINA S.A. de C.V. (Estrategia Financiera)</div>
+                    <div class="job-description">
+                        <ul class="job-responsibilities">
+                            <li>Consolidación de información sobre finanzas públicas</li>
+                            <li>Revisión de cálculos de indicadores y razones financieras</li>
+                            <li>Coordinación de actividades de análisis financiero</li>
+                            <li>Validación y revisión de estudios financieros costo-beneficio, pronósticos y escenarios económicos</li>
+                            <li>Cálculo de deuda mediante tablas de amortización, modelos y corridas financieras</li>
+                            <li>Valuación de instrumentos de cobertura de deuda (SWAPS, CAP y CAP Spread)</li>
+                            <li>Creación de manuales de cálculo y calculadora financiera presupuestal para entes públicos</li>
+                            <li>Evaluación de licitaciones financieras para reestructuración de deuda de entes públicos</li>
+                            <li>Análisis del Fondo General de Participaciones, Recaudación Federal, Criterios Generales de Política Económica y calificaciones crediticias</li>
+                            <li>Aplicación de la Ley de Disciplina Financiera y Ley de Contabilidad Gubernamental</li>
+                            <li>Estudio del Sistema de Alertas de la SHCP</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Salto de página para la segunda hoja -->
+                <div class="page-break"></div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Consultora Externa</div>
+                        <div class="period">2021 - 2023</div>
+                    </div>
+                    <div class="company">Instituto del Fondo Nacional de la Vivienda para los Trabajadores (INFONAVIT)</div>
+                    <div class="job-description">
+                        <ul class="job-responsibilities">
+                            <li>Análisis y ejecución de la Reforma al Art. 37 sobre devolución de saldos acumulados de vivienda</li>
+                            <li>Reportes y análisis numéricos de recaudación por aportaciones extraordinarias de derechohabientes</li>
+                            <li>Elaboración de reportes mensuales para Gerencia y Subdirección de Patrimonio</li>
+                            <li>Ejecución exitosa de procesos de la reforma en un plazo de 9 meses</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Consultora Externa en Análisis Financiero</div>
+                        <div class="period">2018 - 2021</div>
+                    </div>
+                    <div class="company">Banobras</div>
+                    <div class="job-description">
+                        <ul class="job-responsibilities">
+                            <li>Cálculo y valuación de Certificados de Capital de Desarrollo (CKD's) y Fideicomisos de Infraestructura y Bienes Raíces (Fibras)</li>
+                            <li>Análisis y valuación de títulos de deuda gubernamentales (PIC-FARAC y CBICS)</li>
+                            <li>Cálculo de intereses, capital y rompimientos de pagarés</li>
+                            <li>Reportes financieros y valoración de indicadores de liquidez</li>
+                            <li>Análisis numérico y estadístico de ingresos y gastos</li>
+                            <li>Proyecciones monetarias con base en reportes de Tesorería</li>
+                            <li>Cálculo de deuda bancaria y generación de informes financieros y estadísticos</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Planeación Financiera</div>
+                        <div class="period">2015 - 2018</div>
+                    </div>
+                    <div class="company">Consorcio Inmobiliario Grupo Desarrolla</div>
+                    <div class="job-description">
+                        <ul class="job-responsibilities">
+                            <li>Elaboración y análisis de estados financieros (Balance General, Estado de Resultados y Flujo de Efectivo)</li>
+                            <li>Interpretación de razones financieras y presupuestos proforma</li>
+                            <li>Valuación de EVA, ROI, NOPAT, WACC y KPI's</li>
+                            <li>Pronósticos mediante medias móviles y regresiones lineales</li>
+                            <li>Revisión contable conforme a NIF</li>
+                            <li>Modelos financieros de VPN y TIR como estrategias de inversión</li>
+                            <li>Reportes ejecutivos a la Dirección de Finanzas</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Planeación Estratégica Financiera</div>
+                        <div class="period">2013 - 2015</div>
+                    </div>
+                    <div class="company">Aerolíneas Ejecutivas S.A. de C.V.</div>
+                    <div class="job-description">
+                        <ul class="job-responsibilities">
+                            <li>Análisis de cartera de crédito para cuentas especiales</li>
+                            <li>Creación de indicadores financieros, contables y estadísticos (Macros y Excel avanzado)</li>
+                            <li>Programación de formularios y manejo de bases de datos</li>
+                            <li>Sistematización de información estadística en páginas web (Google Sites)</li>
+                            <li>Valuación de seguros de vida y análisis de riesgo</li>
+                            <li>Estudios de recuperación de inversiones (VPN, TIR, TREMA)</li>
+                            <li>Pronósticos de paridad peso-dólar</li>
+                            <li>Planeación financiera y análisis de instrumentos de negocio para la Dirección General</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Analista de Crédito</div>
+                        <div class="period">2008 - 2013</div>
+                    </div>
+                    <div class="company">GEO Edificaciones S.A. de C.V.</div>
+                    <div class="job-description">
+                        <ul class="job-responsibilities">
+                            <li>Cálculo de crédito y condiciones bancarias</li>
+                            <li>Desarrollo de simuladores en Excel</li>
+                            <li>Análisis de reportes en sistema Oracle, uso de macros y tablas dinámicas</li>
+                            <li>Presentaciones ejecutivas y validación de información ante INFONAVIT</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Analista de Plataforma del Mercado de Divisas FOREX</div>
+                        <div class="period">2007 - 2008</div>
+                    </div>
+                    <div class="company">Consorcio Empresarial FAMBE, S. de R.L. (INBEST)</div>
+                    <div class="job-description">
+                        <ul class="job-responsibilities">
+                            <li>Análisis de plataformas de divisas y gestión de riesgo mediante Stop Loss</li>
+                            <li>Evaluación de riesgo en compra-venta de divisas en tiempo real a nivel internacional</li>
+                            <li>Uso de análisis técnico y fundamental en monedas: euro, dólar, yen, franco suizo y libra esterlina</li>
+                            <li>Resultados de hasta 80% de incremento en inversión</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section no-break">
+                <div class="section-title">INFORMACIÓN ADICIONAL</div>
+                <ul class="job-responsibilities">
+                    <li>Dominio de software: Microsoft Office 2000, Microsoft Office XP, Internet, SPSS, VISUAL BASIC, Access, Power Point, Excel y Word</li>
+                    <li>Conocimiento en áreas económico-administrativas, seguros de vida y daños. Teoría del riesgo, Modelos econométricos y Cálculo Actuarial</li>
+                    <li>Estudio de Instrumentos Financieros, en base a teoría del riesgo para derivados y Sistema Financiero Mexicano</li>
+                    <li>Orientada a objetivos teniendo presente las distintas funciones empresariales</li>
+                    <li>Puntual, honesta, tenaz, responsable</li>
+                </ul>
+            </div>
+            
+            <div class="signature-space">
+                <div class="signature-line"></div>
+                <div>Act. Eva Gabriela Gómez Navarro</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
