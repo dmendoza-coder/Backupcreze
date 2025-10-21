@@ -1,2 +1,0 @@
-Este driver es compatible con versiones de 32 y 64 bits de Windows 7, 8, 8.1 y Windows 10.
-Para usar con Windows 8RT es necesario descargar el driver desde la página de FTDI específicamente para la versión RT.
