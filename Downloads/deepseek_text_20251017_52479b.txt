@@ -1,6 +1,0 @@
-| A        | B         | C     | D        | E           | F         | G           | H         | I       | J        |
-|----------|-----------|-------|----------|-------------|-----------|-------------|-----------|---------|----------|
-| TITULO   | FECHA     | HORA  | DURACION | DESCRIPCION | UBICACION | INVITADOS   | ID_EVENTO | ESTADO  | CLIENTE_ID |
-|----------|-----------|-------|----------|-------------|-----------|-------------|-----------|---------|----------|
-| Reunión  | 2024-01-15| 09:00 | 60       | Reunión...  | Oficina   | cliente@... | abc123... | HECHO   | CLI-001  |
-| Llamada  | 2024-01-16| 14:30 | 30       | Seguimiento | Google Meet| team@...   |           | PENDIENTE| CLI-002 |
