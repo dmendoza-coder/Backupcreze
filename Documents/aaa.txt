@@ -1,0 +1,99 @@
+
+Para crear un launchd que se ejecute para todos los usuarios en macOS y se active en los momentos específicos del día que mencionaste, sigue estos pasos:
+
+Crear el script de shell:
+
+Crea el script Reninv.sh en la ubicación /Users/administrador/Scripts/ si aún no existe. Asegúrate de que el script tenga permisos de ejecución (chmod +x Reninv.sh) y que contenga el código necesario para realizar la tarea de inventario que deseas realizar.
+
+bash
+Copiar código
+#!/bin/bash
+# Contenido del script Reninv.sh
+# Por ejemplo:
+echo "Ejecutando tarea de inventario a las $(date)"
+# Agrega aquí los comandos específicos de tu tarea de inventario
+Crear el archivo plist para launchd:
+
+Crea un archivo .plist en el directorio /Library/LaunchAgents/. Este archivo configurará launchd para ejecutar el script en los horarios especificados. Puedes nombrarlo como Inventariocreze.plist.
+
+Utiliza el siguiente contenido como base para tu archivo .plist:
+
+xml
+Copiar código
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>Inventariocreze</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/administrador/Scripts/Reninv.sh</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>StartCalendarInterval</key>
+    <array>
+        <dict>
+            <key>Hour</key>
+            <integer>8</integer>
+            <key>Minute</key>
+            <integer>20</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>12</integer>
+            <key>Minute</key>
+            <integer>0</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>15</integer>
+            <key>Minute</key>
+            <integer>0</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>17</integer>
+            <key>Minute</key>
+            <integer>0</integer>
+        </dict>
+    </array>
+</dict>
+</plist>
+Este archivo .plist especifica lo siguiente:
+
+Label: Nombre único para la tarea de launchd.
+ProgramArguments: Array que contiene la ruta del intérprete de comandos y la ruta completa del script que se ejecutará.
+RunAtLoad: true para que se ejecute el script cuando se carga launchd.
+StartCalendarInterval: Array que define los horarios de ejecución usando la hora (en formato de 24 horas) y los minutos.
+Cargar y activar el launchd plist:
+
+Después de crear el archivo .plist, debes cargarlo en launchd usando el siguiente comando en la terminal:
+
+bash
+Copiar código
+sudo launchctl load /Library/LaunchAgents/Inventariocreze.plist
+Esto cargará el archivo .plist y comenzará a ejecutar el script Reninv.sh en los horarios especificados.
+
+Verificar y ajustar según sea necesario:
+
+Puedes verificar si el launchd está ejecutando correctamente usando:
+
+bash
+Copiar código
+sudo launchctl list | grep Inventariocreze
+Si necesitas hacer ajustes a los horarios o a la configuración del launchd, puedes editar el archivo .plist y luego recargarlo usando:
+
+bash
+Copiar código
+sudo launchctl unload /Library/LaunchAgents/Inventariocreze.plist
+sudo launchctl load /Library/LaunchAgents/Inventariocreze.plist
+Asegúrate de que el script Reninv.sh esté correctamente escrito y que las rutas y nombres de archivos en el .plist sean precisos y coincidan con tu configuración.
+
+Con estos pasos, habrás configurado launchd para ejecutar tu script de inventario en los horarios específicos del día para todos los usuarios en macOS.
+
+sistemas1@office365crezeit.onmicrosoft.com
+
+
