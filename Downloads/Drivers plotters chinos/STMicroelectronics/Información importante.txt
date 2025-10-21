@@ -1,0 +1,2 @@
+En cada carpeta se encuentra el instalador según la versión de Windows que utilices.
+Wi usas Windows 10, usa el controlador que Windows instala por defecto, no es necesario usar ninguno de estos.

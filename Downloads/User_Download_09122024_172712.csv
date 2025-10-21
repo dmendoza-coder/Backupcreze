@@ -1,0 +1,123 @@
+First Name [Required],Last Name [Required],Email Address [Required],Status [READ ONLY],Last Sign In [READ ONLY],Email Usage [READ ONLY],Drive Usage [READ ONLY],Storage Used [READ ONLY]
+  Alejandro,Martinez Maza,amartinez@creze.com,Active,2024/12/06 22:36:59,1.36GB,1.73GB,3.09GB
+  Cyntia Viridiana,Ramos Rodríguez,cramos@creze.com,Active,2024/12/06 10:23:52,0.11GB,0.29GB,0.4GB
+  Diego Francisco,Barrera Sanabria,dbarrera@creze.com,Active,2024/12/03 06:16:14,0.09GB,7.05GB,7.14GB
+  Luis,Olea Richaud,lolea@creze.com,Active,2024/12/06 10:27:35,0.03GB,0.01GB,0.04GB
+  Rafael Alejandro,Ramirez Caro,raramirez@creze.com,Active,2024/12/05 16:52:37,0.28GB,12.86GB,13.14GB
+Abraham,Vargas,avargas@creze.com,Active,2024/12/06 16:14:29,7.48GB,20.29GB,27.78GB
+Adriana P.,Huerta,ahuerta@creze.com,Active,2024/12/05 12:43:15,2.63GB,0.26GB,3.43GB
+Alberto,Muciño,amucino@creze.com,Active,2024/12/06 10:08:39,1.18GB,6.31GB,7.49GB
+Aldo Andres,Gonzalez,agonzalez@creze.com,Active,2024/12/06 09:53:53,11.72GB,20.82GB,32.55GB
+Alejandra,Pastrana,alepastrana@creze.com,Active,2024/12/06 07:02:46,1.28GB,53.88GB,55.16GB
+Alejandro,Trujillo,atrujillo@creze.com,Active,2024/12/04 20:35:50,4.23GB,7.16GB,11.88GB
+Alma,Romero,aromero@creze.com,Active,2024/12/05 19:00:33,45.35GB,7.61GB,52.99GB
+Ana,Soria,asoria@creze.com,Active,2024/12/06 07:02:28,1.03GB,1.77GB,2.79GB
+Ana,Valdelamar,avaldelamar@creze.com,Active,2024/12/06 06:24:41,1.9GB,0.91GB,2.81GB
+Ana I.,Tovar,atovar@creze.com,Active,2024/12/05 14:27:31,13.26GB,5.63GB,18.89GB
+Andres,Loyola Vargas,aloyola@creze.com,Active,2024/12/06 11:35:58,0.26GB,1.31GB,1.58GB
+Andres,Pedroza,apedroza@creze.com,Active,2024/12/07 08:53:58,32.96GB,32.08GB,65.04GB
+Angel,Urzua,uangel@creze.com,Active,2024/12/06 10:35:24,15.77GB,1.24GB,17.02GB
+Aplicaciones,Creze,aplicaciones@creze.com,Active,2024/12/06 10:06:21,0.23GB,0.0GB,0.23GB
+Ariana E.,Rico,arico@creze.com,Active,2024/12/02 11:04:25,12.03GB,2.94GB,14.97GB
+Armando,Santiago,asantiago@creze.com,Active,2024/12/06 15:18:08,49.35GB,69.44GB,118.78GB
+Aurora,Peral,aperal@creze.com,Active,2024/12/07 09:15:51,6.64GB,83.48GB,90.12GB
+Axel Karim ,Melche Rubio,amelche.ext@creze.com,Active,2024/12/06 20:56:28,1.01GB,11.96GB,15.14GB
+Backup,Creze,backup.creze@creze.com,Active,2024/12/04 16:04:36,61.41GB,1210.13GB,1271.54GB
+Berenice,Romero,bromero@creze.com,Active,2024/12/07 09:07:14,14.72GB,18.02GB,32.75GB
+Bernardo ,Colorado Dubois,bcolorado.ext@creze.com,Active,2024/12/03 07:39:15,0.09GB,0.01GB,0.11GB
+Buzon,Creze,buzon@creze.com,Active,2024/10/31 18:14:59,0.03GB,0.0GB,0.03GB
+Carlos,Rodriguez,crodriguez@creze.com,Active,2024/12/03 07:23:13,0.08GB,1.55GB,1.63GB
+Carlos,Velazquez,cvelazquez@creze.com,Active,2024/12/06 10:15:42,10.35GB,10.43GB,20.79GB
+Celine Valeria,Van den Ouweland,celine@creze.com,Active,2024/12/02 08:55:42,6.91GB,3.6GB,10.51GB
+Claudia,Lazcano,clazcano@creze.com,Active,2024/12/07 08:25:18,3.69GB,1.94GB,5.63GB
+Clientes,Creze,clientes@creze.com,Active,2024/12/05 10:15:37,0.58GB,0.43GB,1.01GB
+Cobranza,Creze,cobranza@creze.com,Active,2024/12/06 11:54:39,28.13GB,0.06GB,59.65GB
+Contacto,Ali,ali@creze.com,Active,2024/11/27 10:28:01,1.72GB,1.27GB,2.99GB
+Contacto,-,contacto@creze.com,Active,2024/12/05 20:35:26,13.21GB,0.08GB,13.29GB
+Contacto,Clientes Creze,atencion@creze.com,Active,2024/12/04 07:20:42,3.36GB,0.04GB,3.4GB
+Credito,creze,credito@creze.com,Active,2024/11/26 07:40:54,0.23GB,6.41GB,6.64GB
+Cristian,Juarez,cjuarez@creze.com,Active,2024/12/06 06:57:04,0.49GB,2.14GB,2.64GB
+Cuentanos,RH,cuentanos@creze.com,Active,2024/04/16 16:25:43,0.0GB,0.0GB,0.0GB
+Cynthia,Marcos,cmarcos@creze.com,Active,2024/12/03 08:06:54,3.45GB,10.89GB,14.33GB
+Daniel,Mendoza,dmendoza@creze.com,Active,2024/12/06 16:22:07,10.82GB,90.38GB,101.29GB
+Daniela,Mondragon,dmondragon@creze.com,Active,2024/12/06 08:56:09,24.86GB,7.7GB,32.8GB
+David,Mayo Pacheco,dmayo@creze.com,Active,2024/12/05 13:30:55,0.0GB,0.0GB,0.0GB
+Diego,Pineda,dpineda@creze.com,Active,2024/12/06 17:37:32,5.07GB,0.05GB,5.12GB
+Edgar L.,Lopez,elopez@creze.com,Active,2024/12/06 06:51:20,12.57GB,1.01GB,13.58GB
+Edson Raul,García Valdés,egarcia@creze.com,Active,2024/12/09 08:02:42,0.0GB,0.0GB,0.0GB
+Eduardo N.,Angel,eangel@creze.com,Active,2024/12/07 03:25:29,37.26GB,27.2GB,64.52GB
+Elena Z.,Nava,enava@creze.com,Active,2024/12/07 06:29:57,16.21GB,47.31GB,63.53GB
+Elizabeth,Rodriguez,erodriguez@creze.com,Active,2024/12/05 08:06:13,43.83GB,1.78GB,45.61GB
+Emily,Vilchis,evilchis@creze.com,Active,2024/12/06 07:47:43,4.07GB,0.05GB,4.13GB
+Erika,Leon,eleon@creze.com,Active,2024/12/05 13:43:19,15.15GB,9.73GB,25.07GB
+Erika I.,Rivera,erivera@creze.com,Active,2024/12/04 08:39:08,0.16GB,15.77GB,15.93GB
+Fabian,Castorena,fcastorena@creze.com,Active,2024/12/06 08:13:07,38.46GB,49.06GB,87.52GB
+Fabiola,Fabiola Mendoza Vélez,fmendoza@creze.com,Active,2024/12/06 15:28:30,0.19GB,11.93GB,12.12GB
+Facturas,Creze,facturas@creze.com,Active,2024/12/03 19:28:22,2.55GB,0.01GB,2.55GB
+Federico ,Manzano Lopez,fmanzano@creze.com,Active,2024/12/02 07:34:03,4.6GB,4.88GB,9.48GB
+Fernanda,Cruz,fcruz@creze.com,Active,2024/12/06 05:57:54,35.98GB,41.55GB,77.53GB
+Francisco Javier,Santos Martinez,fsantos@creze.com,Active,2024/12/06 13:43:59,0.3GB,17.8GB,18.17GB
+F�tima,Coyote,fcoyote@creze.com,Active,2024/12/06 21:43:07,8.72GB,0.41GB,9.13GB
+Gerardo,Alcal�,gerardo_alcala@creze.com,Active,2024/12/03 05:59:43,2.6GB,0.01GB,2.61GB
+German,Garcia,ggarcia@creze.com,Active,2024/12/06 20:20:22,4.59GB,31.17GB,35.9GB
+Gil,Cruz,gcruz@creze.com,Active,2024/12/05 13:40:57,5.79GB,8.48GB,14.27GB
+Gilberto,Rodriguez,arodriguez@creze.com,Active,2024/12/06 11:39:43,12.7GB,0.11GB,12.81GB
+Gilberto,Ayala Sanchez,gayala@creze.com,Active,2024/12/04 07:57:21,0.04GB,0.09GB,0.15GB
+Hyldha E.,Perez,hperez@creze.com,Active,2024/12/06 23:31:59,16.95GB,14.56GB,31.51GB
+Itzel,Tapia,itapia@creze.com,Active,2024/12/04 09:55:39,5.28GB,15.15GB,22.28GB
+Ivana,Ponce,iponce@creze.com,Active,2024/12/06 12:00:11,1.85GB,6.23GB,8.08GB
+Jaqueline,Santamaria,jsantamaria@creze.com,Active,2024/12/05 11:44:43,6.55GB,8.73GB,15.28GB
+Jesús Manuel,Naranjo Sánchez,jnaranjo@creze.com,Active,2024/12/04 07:31:40,0.0GB,0.0GB,0.0GB
+Jonathan,La cruz,jlacruz@creze.com,Active,2024/12/06 16:04:57,4.38GB,26.13GB,30.51GB
+Jorge,Carvallo Gómez,jcarvallo@creze.com,Active,2024/12/03 08:03:16,6.52GB,0.9GB,7.42GB
+Jose J.,Gonzalez,jgonzalez@creze.com,Active,2024/12/06 20:31:20,1.01GB,30.93GB,31.95GB
+Juan D.,Vazquez,jvazquez@creze.com,Active,2024/12/03 07:10:58,10.27GB,3.2GB,13.71GB
+Juan D.,Landin,jlandin@creze.com,Active,2024/12/06 02:39:04,1.58GB,0.27GB,1.85GB
+Karely,Chavez,kchavez@creze.com,Active,2024/12/03 07:35:34,11.17GB,20.91GB,32.09GB
+Karen,Ramirez,aramirez@creze.com,Active,2024/12/06 07:53:37,39.92GB,18.16GB,58.78GB
+Karina,Velasco,kvelasco@creze.com,Active,2024/12/06 07:36:57,4.89GB,0.5GB,5.38GB
+Karla N.,Carballido,kcarballido@creze.com,Active,2024/12/05 07:39:42,1.32GB,5.16GB,6.48GB
+Kenneth,Chavez,kechavez@creze.com,Active,2024/12/06 11:27:52,0.04GB,0.71GB,0.75GB
+Laura L.,Olmedo,lolmedo@creze.com,Active,2024/12/06 22:46:28,48.29GB,17.42GB,65.71GB
+Leonardo,Alejandre,leonardo@creze.com,Active,2024/12/04 08:48:42,4.23GB,20.47GB,24.71GB
+Libertad,Anaya,lanaya@creze.com,Active,2024/12/05 07:17:08,46.23GB,24.93GB,71.16GB
+Liliana,Cervantes,lcervantes@creze.com,Active,2024/11/26 12:38:51,0.03GB,0.73GB,0.76GB
+Luis,Ramirez,lramirez@creze.com,Active,2024/12/06 08:37:14,13.28GB,196.03GB,209.39GB
+Luis Francisco,Arellano Velasco,larellano@creze.com,Active,2024/12/04 14:47:29,0.0GB,0.0GB,0.0GB
+Marco,Vazquez,mavazquez@creze.com,Active,2024/12/03 15:45:55,4.84GB,2.35GB,7.19GB
+Maria de las Luz,Torres,mtorres@creze.com,Active,2024/12/05 20:22:38,6.32GB,17.05GB,23.36GB
+Maria J.,Mu?oz,mmunoz@creze.com,Active,2024/12/06 15:32:30,20.34GB,3.2GB,23.54GB
+Mariana,Gonzalez,magonzalez@creze.com,Active,2024/12/04 09:53:14,0.86GB,42.75GB,43.61GB
+Marketing,Creze,marketing@creze.com,Active,2024/12/02 09:32:07,0.0GB,0.0GB,0.0GB
+Marlen,Ramirez,mramirez@creze.com,Active,2024/12/05 13:58:04,13.35GB,23.73GB,37.22GB
+Martha,Gonzalez,mgonzalez@creze.com,Active,2024/12/06 14:45:29,20.5GB,12.79GB,33.29GB
+Michel B.,Caballero,mcaballero@creze.com,Active,2024/12/05 15:55:09,6.13GB,6.59GB,12.72GB
+Michelle,Mucino,mmucino@creze.com,Active,2024/12/06 06:38:23,2.92GB,20.14GB,23.23GB
+Michelle,Vazquez,mvazquez@creze.com,Active,2024/12/06 20:46:30,6.22GB,29.2GB,35.42GB
+Michelle Stephanie,Ramírez Camacho,sramirez@creze.com,Active,2024/11/25 14:33:57,0.01GB,0.27GB,0.28GB
+Nallely,Martinez,nmartinez@creze.com,Active,2024/12/05 17:18:31,22.8GB,0.45GB,23.24GB
+Nashyeli,Ceballos,nceballos@creze.com,Active,2024/12/02 12:51:39,10.88GB,11.08GB,21.96GB
+Nomina,Creze,nomina@creze.com,Active,2024/12/06 23:20:44,0.51GB,0.0GB,0.51GB
+Oscar,Martinez,omartinez@creze.com,Active,2024/12/07 06:45:16,29.57GB,25.17GB,54.74GB
+Pid,Creze,pld@creze.com,Active,2024/11/20 13:03:04,0.63GB,0.0GB,0.63GB
+Raul,Velarde,rvelarde@creze.com,Active,2024/12/06 10:15:16,55.99GB,13.66GB,69.65GB
+Rene,Vega,rvega@creze.com,Active,2024/12/06 14:54:31,12.94GB,40.5GB,53.44GB
+RH,RH,admon_people@creze.com,Active,2024/11/18 17:17:01,0.23GB,0.0GB,0.23GB
+Roberto,Urita Jiménez,rurita@creze.com,Active,2024/12/04 23:40:35,0.03GB,1.88GB,1.91GB
+Rogelio R.,Ramirez,rramirez@creze.com,Active,2024/12/06 07:30:04,2.5GB,30.28GB,63.57GB
+Rub�n,Rom�n,ruben@creze.com,Active,2024/11/26 07:16:03,0.07GB,0.0GB,0.07GB
+Sandra,Gazca,sgazca@creze.com,Active,2024/12/06 12:56:59,39.67GB,38.4GB,78.07GB
+Sandra M.,Lopez,slopez@creze.com,Active,2024/12/04 08:54:50,3.13GB,11.7GB,14.83GB
+Santiago,Gonzalez,sgonzalez@creze.com,Active,2024/12/07 06:56:26,4.65GB,2.61GB,7.26GB
+Sarahi,Mendoza,smendoza@creze.com,Active,2024/12/06 07:46:44,7.13GB,12.21GB,19.33GB
+Soheny C.,Rodriguez,srodriguez@creze.com,Active,2024/12/06 05:07:07,1.55GB,16.98GB,18.55GB
+Sonny,Juarez,stabares@creze.com,Active,2024/03/16 07:39:04,14.88GB,0.0GB,14.88GB
+Teresa,Martinez,tmartinez@creze.com,Active,2024/12/06 11:24:50,7.54GB,0.78GB,8.32GB
+Teresa de Jes�s,Jim�nez,tjimenez@creze.com,Active,2024/12/06 16:42:39,6.41GB,3.29GB,9.7GB
+Tomasa,Tellez,ttellez@creze.com,Active,2024/12/06 07:37:48,12.44GB,1.5GB,13.94GB
+Une,Creze,une@creze.com,Active,2024/11/27 08:42:41,0.1GB,0.0GB,0.1GB
+Vanessa,Santos,vsantos@creze.com,Active,2024/11/25 04:09:19,5.77GB,8.57GB,14.33GB
+Vanessa,Martinez,vmartinez@creze.com,Active,2024/12/06 06:58:43,14.33GB,6.61GB,20.93GB
+Victor,Rosado,vrosado@creze.com,Active,2024/12/05 18:25:46,2.88GB,0.01GB,3.14GB
+Yanira P.,Cantor,ycantor@creze.com,Active,2024/12/03 07:06:09,0.06GB,1.97GB,2.03GB
+Yesenia,Vargas,yvargas@creze.com,Active,2024/12/04 07:32:40,9.04GB,4.5GB,13.54GB

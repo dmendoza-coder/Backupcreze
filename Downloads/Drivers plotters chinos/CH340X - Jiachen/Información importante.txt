@@ -1,0 +1,3 @@
+Este driver es compatible con versiones de Windows de 32 y 64bits.
+Compatible con Windows 7, 8, 8.1 y 10.
+Se debe instalar desde el administrador de dispositivos.

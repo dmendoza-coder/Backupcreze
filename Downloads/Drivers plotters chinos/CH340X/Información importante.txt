@@ -1,0 +1,3 @@
+Driver compatible con Windows 7, 8, 8.1 y 10 de 32 y 64 bits.
+No ha sido probado en Windows XP.
+Ejecutar como administrador.
